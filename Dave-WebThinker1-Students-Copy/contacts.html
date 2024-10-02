@@ -50,6 +50,29 @@
 		<!-- Key section -->
 		<form class="container py-3">
 			<div class="row gy-3">
+				<row class="row">
+					<column class="col">
+						<label for="Name">Name*</label>
+						<input id="name" placeholder="Ex: John Doe" class="form-control">
+						<div id="errorMessage" class="d-none">
+							<p class="text-danger">Invalid</p>
+				  		</div>
+				  		<button type="button" class="btn btn-primary" onclick="validate()">Submit</button>
+					</column>
+
+					<column class="col">
+						<label for="EmailAddress">Email Address*</label>
+						<input id="contact" placeholder="Ex: name@gmail" class="form-control">
+						<div id="errorMessage" class="d-none">
+							<p class="text-danger">Invalid</p>
+						</div>
+				  		<button type="button" class="btn btn-primary" onclick="validate()"> Submit</button>
+					</column>
+				</row>
+				
+
+				
+
 				<!-- Label: Name*
 						 Text Input field -->
 
