@@ -34,7 +34,7 @@
 	<!-- Here the main container where students should code -->
 	<article class="min-vh-100">
 		<!-- Banner Region -->
-		<div id="banner"></div>
+		<div id="#banner"></div>
 		<!-- Page Header -->
 		<div class="container pt-4 py-3">
 			<h1 class="text-center fw-bold display-4">Past Projects</h1>
@@ -48,9 +48,27 @@
 		</div>
 		<!-- Key section -->
 		<div class="container py-3 pb-4">
+			<ul class="nav nav-pills">
+				<li class="nav-item">
+						<button class="nav-link rounded-pill active" data-bs-toggle="pill" data-bs-target="#scratch">Scratch</button>
+					</li>
+					<li class="nav-item">
+							<button class="nav-link rounded-pill" data-bs-toggle="pill" data-bs-target="#canvas">HTML Canvas</button>
+					</li>
+			</ul>
 			<!-- Create An Unordered List with 2 List Items -->
 
 			<div class="tab-content">
+				<div class="tab-pane fade show active" id="scratch">
+					<h3>Monke & Banana Scratch Project</h3>
+					<iframe src="https://scratch.mit.edu/projects/808392264/embed" title="Monke & Banana Scratch Project" width="485" height="402"></iframe>
+					<br>
+					<h3>Platformer Game</h3>
+					<iframe src="https://scratch.mit.edu/projects/779856092/embed" title="Platformer Game" width="485" height="402"></iframe>
+				</div>
+				<div class="tab-pane fade" id="canvas">
+					<canvas id="canvasBoard" width="800" height="600" class="border border-dark"></canvas>
+				</div>
 				<!-- Create two tabs for Project Showcase
 	-  The first tab should have
 				- One header of "Monke & Banana" with the following source: https://scratch.mit.edu/projects/808392264/embed (Width 485 & Height 402)
